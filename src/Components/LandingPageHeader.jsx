@@ -1,16 +1,27 @@
 import "./LandingPageHeader.css"
-import {Components} from 'react'
-import {Logo} from './Logo'
+import React from 'react'
+import Logo  from "../Logo/Logo";
 
 import SpotifyWhite from '../app/assets/images/spotify-white.png'
 import SpotifyWhiteSVG from '../app/assets/images/spotify-white.svg'
 
+import SpotifyBlack from '../app/assets/images/spotify-black.png';
+import SpotifyBlackSVG from '../app/assets/images/spotify-black.svg';
+
+import {ReactComponent as MenuIcon} from '../app/assets/icons/list.svg';
+
+
 
 export const LandingPageHeader = () => {
+    
     return(<header className="header">
         <div className="logo">
-            <Logo />
-            </div>
+            <Logo useWhite = {true} /> 
+        </div>
+        <div className="menu">
+            <MenuIcon fill = 'white' />
+            
+        </div>
         
         <div className="menu">
         <ul>

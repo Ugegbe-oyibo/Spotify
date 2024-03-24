@@ -1,5 +1,8 @@
 .hero {
     background-color: #1D75DF;
+    color: #ffffff;
+    text-align: center;
+    
     margin: 0;
     padding: 15px;
     min-height: calc(480px - 30px);
@@ -14,4 +17,34 @@
     font-size: 31px;
     font-weight: bold;
     color: #ffff;
+    margin: 0;
 }
+
+.description {
+    font-size: 24px;
+}
+
+.terms {
+    font-size: 11px;
+    
+}
+
+.terms a {
+    text-decoration: underline;
+    color: #ffff;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
